@@ -12,7 +12,7 @@ class Employee{
 };
 
 //Manager subclass of employee.
-Manager extends Employee{
+class Manager extends Employee{
     constructor(name, department, teamSize){
         super(name, department);
         this.teamSize = teamSize;
@@ -23,3 +23,8 @@ Manager extends Employee{
         return `The Manager,${this.name}, works in the ${this.department} on a team of ${this.teamSize}`
     }
 };
+
+//sample instances
+Jacob = new Employee()
+Sarah = new Employee()
+Mary =  new Manager()
