@@ -20,7 +20,7 @@ class Manager extends Employee{
 
     //Overwriting describe method.
     describe(){
-        return `The Manager,${this.name}, works in the ${this.department} on a team of ${this.teamSize}`
+        return `The Manager, ${this.name}, works in the ${this.department} on a team of ${this.teamSize}`
     }
 };
 
@@ -41,10 +41,17 @@ class Company{
     }
     //method to list each employees descriptions
     listEmployees(){
-        return {
-            for emp of this.employees{
-                emp.describe()
-            }
+        for (let individual of this.employees) {
+    
+            console.log(individual.describe());
         }
     }
 }
+
+//sample company instance
+const BandL = new Company();
+BandL.addEmployee(emp1);
+BandL.addEmployee(emp2);
+BandL.addEmployee(emp3);
+
+BandL.listEmployees()
