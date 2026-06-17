@@ -25,6 +25,6 @@ class Manager extends Employee{
 };
 
 //sample instances
-Jacob = new Employee()
-Sarah = new Employee()
-Mary =  new Manager()
+const emp1 = new Employee("Jack Black", "Public Relations")
+const emp2 = new Employee("Sarah Goodwill", "Engineering")
+const emp3 =  new Manager("Mary Hall", "Operations", 8)
