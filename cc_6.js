@@ -24,7 +24,27 @@ class Manager extends Employee{
     }
 };
 
-//sample instances
+//sample employee instances
 const emp1 = new Employee("Jack Black", "Public Relations")
 const emp2 = new Employee("Sarah Goodwill", "Engineering")
 const emp3 =  new Manager("Mary Hall", "Operations", 8)
+
+//new Company Class.
+class Company{
+    constructor(){
+        //Empty array
+        this.employees = [];
+    }
+    //method ot add employees to array
+    addEmployee(emp){
+        this.employees.push(emp);
+    }
+    //method to list each employees descriptions
+    listEmployees(){
+        return {
+            for emp of this.employees{
+                emp.describe()
+            }
+        }
+    }
+}
